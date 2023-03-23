@@ -23,7 +23,7 @@ body {
 
 .main {
     margin: auto;
-    width: 50%;
+    width: 80%;
     /* border: 3px solid green; */
     padding: 20px;
     
@@ -38,7 +38,8 @@ body {
 }
 
 .desc {
-    margin: 10px;
+
+    margin: 10px 0;
     font-size: 30px;
     text-align: center;
     /* color: rgb(0, 0, 0); */
@@ -50,6 +51,7 @@ body {
 }
 
 textarea {
+    padding: 1.5rem;
     font-size: 15px;
 }
 
@@ -74,6 +76,7 @@ textarea {
     display: inline-block;
     font-size: 20px;
     margin: 4px 2px;
+    margin-top: 0rem;
     cursor: pointer;
 }
 
@@ -88,4 +91,22 @@ textarea {
     text-align: center;
     font-size: 50px;
     color: red;
+}
+.filediv{
+    margin: 0 auto;
+    width: 50%;
+    padding: 1rem ;
+}
+.filediv input{
+    font-size: 20px;
+}
+.userfile{
+    background-color: #ba0b0b;
+    font-size: 2rem;
+  /* display: inline; */
+}
+
+.smal{
+    color: gray;
+    font-size: 1rem;
 }

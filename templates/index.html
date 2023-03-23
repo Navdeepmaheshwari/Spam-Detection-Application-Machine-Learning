@@ -13,17 +13,25 @@
     <div class="main">
         <h2 class='head'><span>SPAM DETECTOR</h2>
         <div class='desc'>
-            <p>Please type in the text box to check whether the message is a Spam or Not</p>
+            <p>Please type in the text box or Upload a file to Predict</p>
         </div>
 
         <div class="container">
-            <form action="{{ url_for('predict') }}" method="POST">
-                <textarea class='message' name="message" rows="15" cols="75"
+            <form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+                <textarea class='message' name="message" rows="5" cols="75"
                     placeholder="Enter Your Message Here."></textarea><br />
+                <h2>OR</h2>
+                <div class="filediv"><input type="file" name="file" id="userfile"> <br><span class="smal">
+                        (Upload .csv or
+                        .zip
+                        file
+                        only)</span></div>
+                <br>
+
                 <input type="submit" class="btn" value="Predict">
             </form>
         </div>
-        
+
         <div class="predict">
             {{prediction_text}}
         </div>
